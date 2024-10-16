@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+  <title>TicTacToe Game</title>
+</head>
+
+<body>
+  <nav>
+    <h1>TicTacToe.com</h1>
+  </nav>
+  <div class="container">
+    <div class="info">
+      <h1>Welcome to My TicTacToe Game</h1>
+      <h2>It is now X's turn</h2>
+      <button id="reset">Reset Game</button>
+      <button id="switchMode">Switch to Single Player</button>
+      <div class="scoreboard">
+        <h3>Scoreboard</h3>
+        <p>X: <span id="scoreX">0</span></p>
+        <p>O: <span id="scoreO">0</span></p>
+      </div>
+      <div class="instructions">
+        <h3>How to Play:</h3>
+        <p>1. Player X and Player O take turns clicking on the grid.</p>
+        <p>2. The first to align three of their marks in a row, column, or diagonal wins!</p>
+        <p>3. Click "Reset Game" to start over.</p>
+      </div>
+    </div>
+    <div class="game">
+      <div class="box bt-0 bl-0"><span class="boxText"></span></div>
+      <div class="box bt-0"><span class="boxText"></span></div>
+      <div class="box bt-0 br-0"><span class="boxText"></span></div>
+      <div class="box bl-0"><span class="boxText"></span></div>
+      <div class="box"><span class="boxText"></span></div>
+      <div class="box br-0"><span class="boxText"></span></div>
+      <div class="box bb-0 bl-0"><span class="boxText"></span></div>
+      <div class="box bb-0"><span class="boxText"></span></div>
+      <div class="box bb-0 br-0"><span class="boxText"></span></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <h2 id="winMessage">Congratulations X, You Have Won the Game!</h2>
+      <img src="./win.gif" alt="Dancing Celebration">
+      <button id="closeOverlay">Close</button>
+    </div>
+  </div>
+</body>
+
+</html>
